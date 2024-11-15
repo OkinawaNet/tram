@@ -50,7 +50,7 @@ defmodule Tram do
         :open,
         :close_doors,
         %{passengers_entered: passengers_entered, passengers_exited: passengers_exited},
-        %{data: %{passengers: passengers}} = state_payload
+        %{data: %{passengers: passengers}}
       ),
       do:
         {:ok, :ready, %{data: %{passengers: passengers + passengers_entered - passengers_exited}}}

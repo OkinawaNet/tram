@@ -6,8 +6,6 @@ defmodule TramTest do
   import Finitomata.ExUnit
   import Mox
 
-  alias TramTest, as: Tr
-
   describe "Tram" do
     setup_finitomata do
       initial_passengers = 0
